@@ -8,3 +8,7 @@
 > Commits you push to the connected branch sync back to Lovable and show up in
 > the editor, so keep the branch in a working state.
 <!-- LOVABLE:END -->
+
+## Backend
+- `server/` is a standalone Express + pg API for AWS RDS; it reads DATABASE_URL from server/.env only. Why: credentials must never reach frontend code.
+- Frontend uses `src/lib/api.ts`; with no VITE_API_URL it falls back to in-memory sample data. Why: Lovable preview cannot reach RDS.
