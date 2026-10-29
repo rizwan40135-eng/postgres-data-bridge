@@ -20,15 +20,15 @@ npm install
 npm run migrate
 npm run seed
 
-# 4. Build the frontend so the API serves it (optional, from project root)
-cd .. && npm install && VITE_API_URL=same-origin npm run build && cd server
-
 # 5. Start
 npm start            # http://EC2_PUBLIC_IP:3000
 
 # Keep it running
 sudo npm i -g pm2 && pm2 start index.js --name inventory-api && pm2 save && pm2 startup
 ```
+
+# 6. Frontend (second terminal, project root)
+#    echo 'VITE_API_URL=http://EC2_PUBLIC_IP:3000' > .env && npm install && npm run dev -- --host 0.0.0.0
 
 Open port 3000 in the EC2 security group (or put Nginx in front on 80/443).
 
