@@ -1,14 +1,20 @@
-# Welcome to your Lovable project
+# Postgres Data Bridge
+
+Create a simple application that reads and updates data in AWS RDS PostgreSQL instead of Supabase.
+
+I have already created the RDS database and user, and my EC2 server can connect to it. Generate a Node.js backend that uses the server-side DATABASE_URL variable from .env. Keep database credentials out of frontend code.
+
+Include the schema migrations, sample-data loading script, and clear commands to run the application on EC2. For Lovable preview, use sample data without requiring access to RDS.
 
 This project was built with [Lovable](https://lovable.dev).
 
 ## Build with Lovable
 
-Open your project in the [Lovable editor](https://lovable.dev) and keep building.
+Continue developing this project in the [Lovable editor](https://lovable.dev/projects/c30f5a42-67a7-483d-886a-c86167b5f147).
 
 - **Ship faster**: describe what you want to build and Lovable handles the code.
-- **Stay in sync**: connect the project to GitHub and every change made in Lovable is committed straight to your repository.
-- **Full ownership**: this code is yours. Push to your repository and your changes sync back into Lovable, ready for your next prompt.
+- **Stay in sync**: every change made in Lovable is committed straight to this repository.
+- **Full ownership**: this code is yours. Push to `main` on GitHub and your changes sync back into Lovable, ready for your next prompt.
 
 ## Development
 
@@ -20,10 +26,3 @@ cd <repository-name>
 npm i
 npm run dev
 ```
-
-## Built with
-
-- TanStack Start
-- TypeScript
-- React
-- Tailwind CSS
